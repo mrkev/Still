@@ -1,0 +1,12 @@
+{
+  "name": "Netword",
+  "version": "0.0.0",
+  "description": "A quick, dense and objective network language",
+  "author": "Flipping Bits",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-peg": "^0.1.1",
+    "gulp-util": "^2.2.14",
+    "pegjs": "^0.8.0"
+  }
+}
