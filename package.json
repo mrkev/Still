@@ -1,12 +1,18 @@
 {
-  "name": "Netword",
+  "name": "Still",
   "version": "0.0.0",
   "description": "A quick, dense and objective network language",
   "author": "Flipping Bits",
+  "main": "./src/js/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-peg": "^0.1.1",
+    "gulp-shell": "^0.2.5",
     "gulp-util": "^2.2.14",
-    "pegjs": "^0.8.0"
+    "pegjs": "^0.8.0",
+    "mocha": "*"
   }
 }

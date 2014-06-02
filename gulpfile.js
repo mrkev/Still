@@ -1,6 +1,7 @@
 gulp  = require('gulp');
 peg   = require('gulp-peg');
 gutil = require('gulp-util');
+shell = require('gulp-shell');
 
 paths = {
 	scripts : {
@@ -19,6 +20,10 @@ gulp.task ("compile:peg", function () {
 
 gulp.task ("watch", function () {
 	gulp.watch(paths.scripts.peg.src, ['compile:peg']);
-})
+});
+
+
 
 gulp.task ('default', ['compile:peg']);
+
+gulp.task ('run', shell.task(['node src/js/index.js']));
